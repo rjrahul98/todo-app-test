@@ -1,0 +1,111 @@
+.topHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.topHeader input {
+  height: 40px;
+  width: 300px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000000;
+  padding-inline: 20px;
+  outline: none;
+  border: 1px solid #6b6b6b;
+}
+
+.topHeader h2 {
+  margin: 0px;
+}
+
+.filterBtns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.active {
+  background: green;
+  color: #fff;
+}
+
+.itemContainer input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.itemContainer input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  color: #4caf50; /* Green checkmark */
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 1.1em;
+  border: 1px solid #6b6b6b;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-block: 10px;
+}
+
+.itemText {
+  margin: 0px;
+}
+
+.completed {
+  background: #4caf5061;
+  border: 2px solid #4caf50;
+}
+
+.todosContainer {
+  max-height: 50vh;
+  overflow: scroll;
+  margin-top: 30px;
+}
+
+.inputTodo {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: 1px solid #6b6b6b;
+  border-radius: 4px;
+  padding-inline: 20px;
+  box-sizing: border-box;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.addTodoBtn {
+  width: 100%;
+  background: #323232;
+  color: #fff;
+  height: 45px;
+}
+
+.itemLeftSide {
+  place-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.itemRightSide {
+  cursor: pointer;
+}
